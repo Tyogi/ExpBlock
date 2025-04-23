@@ -48,12 +48,12 @@ Provide a custom output filename or press Enter to use the default `results.txt`
 **Step 3: Select First Dataset (Source File)**  
 You'll be shown a list of available files in the `/data` folder:
 
-1.mag.txt
-2.test_voters_A.txt
-3.test_voters_B.txt
-4.dblp-b.txt
-5.dblp-a.txt
-6.aminer.txt
+1. mag.txt  
+2. test_voters_A.txt  
+3. test_voters_B.txt  
+4. dblp-b.txt  
+5. dblp-a.txt   
+6. aminer.txt
 
 
 Choose the appropriate source file:
