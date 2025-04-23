@@ -1,50 +1,81 @@
 # ExpBlock
 
-To run this project, download and extract the zip file from github.
+**ExpBlock** is a Java-based application designed for evaluating streaming record linkage on large datasets. It supports interactive execution and customizable settings for block sizes, output filenames, and input datasets.
 
-# Prerequisites
+---
 
-1. Install VScode in your local system.
-2. Install Java version 17.
+## 📦 Setup Instructions
 
-datasets are very large in size, go to this link https://rb.gy/4cwd6y and download all the datasets in data folder.
+### 🔧 Prerequisites
 
-Then go to the below path ExpBlock-main/expblock/src/main/java/com/data and paste all the downloaded datasets in this data folder.
+1. [Visual Studio Code](https://code.visualstudio.com/) installed on your local machine.
+2. Java Development Kit (JDK) version 17 or above.
 
-After the setup, run the Main.java file.
-then user prompts will show up 
+### 📁 Dataset Preparation
 
-1. Please select the number of blocks (e.g., 1000, 100000, 10000000): select the number of blocks you want to use.
+Due to the large size of the datasets, download them manually from the following link:  
+🔗 [Download Datasets](https://rb.gy/4cwd6y)
 
-2. Enter the output file name (e.g., results.txt): you can give your custom result file name, otherwise it gonna take results.txt by default.
-   
-3. Select a file to read from the data folder: the datasets which are in the data folder gonna pop-up over here, Select the first file, it should be
-test_voters_A.txt to test the NCVR dataset, Select dblp-a.txt to test the DBLP dataset, Select mag.txt to test the OAG dataset.
-1. mag.txt
-2. test_voters_A.txt
-3. test_voters_B.txt
-4. dblp-b.txt
-5. dblp-a.txt
-6. temp.txt
-7. aminer.txt
-2
+Once downloaded:
 
-4.Select a file to read from the data folder: here select the second file, it should be
-test_voters_B.txt to test the NCVR dataset, Select dblp-b.txt to test the DBLP dataset, Select aminer.txt to test the OAG dataset.
-1. mag.txt
-2. test_voters_A.txt
-3. test_voters_B.txt
-4. dblp-b.txt
-5. dblp-a.txt
-6. temp.txt
-7. aminer.txt
-3
+- Extract and copy all dataset files into the following directory in your project:  
+  `ExpBlock-main/expblock/src/main/java/com/data`
+
+---
+
+## 🚀 Running the Project
+
+1. Open the project in Visual Studio Code.
+2. Navigate to `Main.java` and run the file.
+3. Follow the interactive prompts:
+
+---
+
+### 🧑‍💻 User Prompts & Input Guide
+
+**Step 1: Number of Blocks**  
+You’ll be asked:
+
+Please select the number of blocks (e.g., 1000, 100000, 10000000):
+
+Enter the number of blocks you want to use.
+
+**Step 2: Output File Name**  
+Enter the output file name (e.g., results.txt):
+
+Provide a custom output filename or press Enter to use the default `results.txt`.
+
+**Step 3: Select First Dataset (Source File)**  
+You'll be shown a list of available files in the `/data` folder:
+
+1.mag.txt
+2.test_voters_A.txt
+3.test_voters_B.txt
+4.dblp-b.txt
+5.dblp-a.txt
+6.aminer.txt
 
 
+Choose the appropriate source file:
+- `test_voters_A.txt` for NCVR dataset  
+- `dblp-a.txt` for DBLP dataset  
+- `mag.txt` for OAG dataset
 
+**Step 4: Select Second Dataset (Target File)**  
+Select the matching file:
+- `test_voters_B.txt` for NCVR dataset  
+- `dblp-b.txt` for DBLP dataset  
+- `aminer.txt` for OAG dataset
 
+**Step 5: Execution**  
+The program will now process the data. Results will be saved to the file specified in Step 2 (e.g., `results.txt`).
 
+---
 
+## 📄 Output
 
+- The final results will be stored in the output file (default: `results.txt`) in the root directory of the project.
 
+---
 
+Feel free to reach out if you face any setup issues or want to contribute to the project.
